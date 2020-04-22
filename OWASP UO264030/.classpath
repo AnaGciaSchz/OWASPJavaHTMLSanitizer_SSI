@@ -13,5 +13,14 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/guava-27.1-jre.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/owasp-java-html-sanitizer-20191001.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/animal-sniffer-annotations-1.17.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/checker-qual-2.5.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/error_prone_annotations-2.2.0.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/failureaccess-1.0.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/j2objc-annotations-1.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

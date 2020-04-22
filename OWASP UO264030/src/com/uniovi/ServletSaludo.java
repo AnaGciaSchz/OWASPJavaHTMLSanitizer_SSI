@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.owasp.html.Sanitizers;
+
 /**
  * Clase para saludar al usuario
  * @author Ana Garcia
@@ -35,7 +37,9 @@ public class ServletSaludo extends HttpServlet {
     		 out.println("<BODY>");
     		 String nombre = (String) request.getParameter("nombre");
     		 if (nombre != null) {
-    		 out.println("Hola " + nombre + "<br>");
+    			String desinfectado = Sanitizers.FORMATTING.sanitize("Hola " + nombre + "<br>");
+    			out.println(desinfectado);
+    		 //out.println("Hola " + nombre + "<br>");
     		 }
     		 out.println("</BODY></HTML>");
     		}
